@@ -1,0 +1,7 @@
+AmazonEC2FullAccess_arn = "arn:aws:iam::aws:policy/AmazonEC2FullAccess" 
+AWSCodedeploy_arn       = "arn:aws:iam::aws:policy/AWSCodeDeployFullAccess"
+AmazonS3FullAccess_arn  = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+AmazonSNSFullAccess_arn = "arn:aws:iam::aws:policy/AmazonSNSFullAccess"
+ImageId                 = "ami-0883a368ba448362c"
+KeyName                 = "raven"
+PublicKey               = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDazUfDV4SCiWp5dMy7GTuWbbGIlbYeaCrsC42UULOAd3SfMdMM7/c3fkgCuQpOdbqX0xlkZ46CE5c3JEfSQxICm/VPft7gZa+tg65HJVQ1fw/kguTWoSImimBcNSedA8EO/9ax9n0p9YUd/+DlLH1OBLWx5Pe5unn7CUNIx6uYvJ+fVTanKVvbLBeGpCOAIwiPwL6cNXc1KCArBrh8A1iYXsdNe0uSsWzhPXfN73XkF9YDOr2q7xB+Vq14ex9EmopcGiVwasWkCrU1UhD5FV4t2QMvFWXXPG/BkbDh5uC7zHv0rHU83QWnjYymKYl+VTrQxWMEiQL9Pde+Jaq/NjlkfhDXQHDMZ3Gm8n5bGqKheBUqHHYo54C20zOBZxDNt36lBz3HOrb0JXXbFLsP6FghHhDD17onr9XcSE10SkO0S6tlzRdG5C++g61XiGZ+YxbHJKjpZiv+GjT3yW8IxV+lNITcPQLRJuxAuYEQ5P0NxyIfV9xdHaWA+o3goDv5YWr5TohixOxiAkz66jQtwTrfd0fH8N7dwPgX9raTDVP3g2MYK6X5Q5XoGOSeqCdpzzrGC+Y9yYgmaQcd5Ug4euY/jIHLghdW52cCGCJaLdTjE8gHD4z0u/Q3y+W3ymF99GqdGSI9ZHxmfxk4GKtMRR25KLG1KC7GeQlZEbnRgM0tXQ=="

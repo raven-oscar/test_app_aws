@@ -1,0 +1,21 @@
+version: 0.0
+os: linux
+files:
+  - source: /test_app/
+    destination: /usr/local/bin/
+  - source: /systemd/
+    destination: /etc/systemd/system/
+file_exists_behavior: OVERWRITE
+hooks:
+  AfterBlockTraffic:
+   - location: scripts/prep_app.sh
+     timeout: 300
+     runas: root    
+  ApplicationStop:
+   - location: scripts/stop_app.sh
+     timeout: 300
+     runas: root
+  ApplicationStart:
+   - location: scripts/start_app.sh
+     timeout: 300
+     runas: root

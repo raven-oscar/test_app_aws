@@ -1,0 +1,33 @@
+- name: install repo
+  apt_repository:
+    repo: "{{ item }}"
+    update_cache: false
+  with_items:
+    - 'deb http://archive.ubuntu.com/ubuntu {{ansible_distribution_release}} multiverse'
+    - 'deb http://archive.ubuntu.com/ubuntu {{ansible_distribution_release}}-updates multiverse'
+
+- name: update cache
+  apt:
+    update_cache: true
+
+- name: app deps
+  apt:
+    name:
+      - wget
+      - ruby 
+
+- name: install agent
+  shell: "{{ item }}"
+  args:
+    chdir: /home/ubuntu
+  with_items:
+    - wget https://aws-codedeploy-eu-central-1.s3.amazonaws.com/latest/install
+    - chmod +x ./install
+    - sudo ./install auto
+    - rm install
+
+- name: enable codedeploy-agent 
+  systemd: 
+    name: codedeploy-agent
+    state: started
+    enabled: true

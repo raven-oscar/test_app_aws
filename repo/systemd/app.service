@@ -1,0 +1,13 @@
+[Unit]
+Description=app
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=root
+ExecStart=/usr/local/bin/app
+Restart=always
+SendSIGKILL=no
+
+[Install]
+WantedBy=multi-user.target
